@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-color: #F3F3F3;
+    scroll-behavior: smooth;   
+}
+
+/* ============================ header ================================= */
+
+/* barra negra */
+header .msj-ofertas-idioma-pais {
+    color: #F3F3F3;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 5%;
+    background: #222222;
+}
+
+header .msj-ofertas-idioma-pais select{
+    border: 0;
+    background-color: transparent;
+    color: #F3F3F3;
+}
+
+/* barra naranja */
+
+.barra-logo-nav {
+    height: 80px;
+    background: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.barra-logo-nav .container-logo {
+    width: 250px;
+}
+
+.barra-logo-nav .container-logo img {
+    width: 100%;
+}
+
+.barra-logo-nav nav ul.lista-nav{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    color: #F3F3F3;
+}
+
+ul.lista-nav li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+ul.lista-nav li img {
+    margin: 0 2px;
+    width: 22px;
+}
+
+ul.lista-nav li span{ 
+    font-size: 20px;
+}
+
+/* hero section */
+
+section.hero {
+    position: relative;
+    height: 76.8vh;
+}
+
+section.hero img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.hero .texto {
+    position: absolute;
+    right: 25px;
+    bottom: 160px;
+    text-align: center;
+}
+
+.hero .texto h2 {
+    letter-spacing: -0.5px;
+    background-color: #F3F3F3;
+    color: #3C2313;
+    font-size: 3rem;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.hero .texto p {
+    color: #3C2313;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero .texto span {
+cursor: pointer;
+    display: inline-block;
+    color: #F3F3F3;
+    background-color: #F0A83E;
+    border-radius: 5px;
+    font-size: 1.5em;
+    width: 190px;
+    padding: 20px;
+}
+
+section.productos-destacados {
+    text-align: center;
+}
+
+section.productos-destacados .productos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+img[alt="icono-patita"]{
+    width: 100px;
+    margin-top: 20px;
+}
+
+section.productos-destacados h2 {
+    font-size: 4rem;
+    color: #3C2313;
+}
+
+section.productos-destacados p {
+    color: #666666;
+    font-size: 1.4rem;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.productos-destacados .productos > div {
+    background-color: #FBFAF6;
+    width: 400px;
+    height: 480px;
+}   
+
+.productos .tarjeta-producto-1 p, .productos .tarjeta-producto-2 p, .productos .tarjeta-producto-3 p{
+    font-weight: 500;
+    color: #3C2313;
+    position: relative;
+    bottom: 25px;
+}
+
+.productos .tarjeta-producto-1 span, .productos .tarjeta-producto-2 span, .productos .tarjeta-producto-3 span{
+    color: #F0A83E;
+}
+
+.productos .tarjeta-producto-1 img, .productos .tarjeta-producto-2 img, .productos .tarjeta-producto-3 img{
+    width: 100%;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.contacto form h2 {
+    color: #3C2313;
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.contacto form input {
+    width: 530px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #3C2313;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    color: #F3F3F3;
+    font-size: 15px;
+}
+
+.contacto form .buttons {
+    width: 530px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form .buttons button {
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    border: none;
+    color: #F3F3F3;
+    background-color: #8A8787;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form .buttons button:last-child {
+    background-color: #F0A83E;
+    margin-left: 10px;
+}
+
+
+/* =======================footer=========================== */
+
+footer .barra-suscripcion {
+    height: 100px;
+    background-color: #F0A83E;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+
+footer .barra-suscripcion div {
+    display: flex;
+    align-items: center;
+}
+
+.barra-suscripcion div img {
+    height: 40px;
+}
+
+.barra-suscripcion div p {
+    font-size: 30px;
+    margin-left: 15px;
+    color: #FBFAF6;
+}
+
+.barra-suscripcion div input {
+    height: 70px;
+    width: 420px;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.barra-suscripcion div input::placeholder {
+    color:  #8A8787;
+    padding-left: 15px;
+}
+
+.barra-suscripcion div button {
+    width: 120px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #3C2313;
+    color: #FBFAF6;
+    cursor: pointer;
+}
+
+footer .contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+    background-color: #3C2313;
+}
+
+footer .contacto .localidad, footer .contacto .telefono, footer .contacto .correo{
+    display: flex;
+    margin: 35px;
+}
+
+ .contacto .localidad img,  .contacto .telefono img,  .contacto .correo img {
+    width: 90px;
+    margin-right: 25px;
+ }
+
+ .contacto .localidad .texto,  .contacto .telefono .texto,  .contacto .correo .texto {
+    color: #8A8787;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ .contacto .localidad h4,  .contacto .telefono h4,  .contacto .correo h4 {
+    color: white;
+    font-size: 2rem;
+ }
+
+ .contacto .imagen-logo-final {
+    width: 270px;
+ }
+ .contacto .imagen-logo-final img {
+    width: 100%;
+ }
+
+ footer .mensaje-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    color: #FBFAF6;
+    height: 30px;
+ }
