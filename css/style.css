@@ -338,16 +338,6 @@ footer .contacto .localidad, footer .contacto .telefono, footer .contacto .corre
         width: 100%;
     }
 
-    nav{
-        display: none;
-    }
-
-    .barra-logo-nav img[ alt="Menú hamburguesa"]{
-        display: block;
-        width: 25px;
-        cursor: pointer;
-    }
-
     section.hero .texto{
         justify-content: center;
         align-items: center;
@@ -367,6 +357,17 @@ footer .contacto .localidad, footer .contacto .telefono, footer .contacto .corre
         align-items: center;
         gap: 15px;
         padding: 2% 0;
+    }
+ }
+ @media (max-width: 822px) {
+    nav{
+        display: none;
+    }
+
+    .barra-logo-nav img[ alt="Menú hamburguesa"]{
+        display: block;
+        width: 25px;
+        cursor: pointer;
     }
  }
 
