@@ -49,7 +49,7 @@ header .msj-ofertas-idioma-pais select{
 }
 
 .barra-logo-nav .container-logo img {
-    width: 100%;
+    width: 250px;
 }
 
 .barra-logo-nav nav ul.lista-nav{
@@ -74,51 +74,58 @@ ul.lista-nav li span{
     font-size: 20px;
 }
 
+/* boton hamburguesa oculto */
+.barra-logo-nav img[ alt="Menú hamburguesa"]{
+    display: none;
+}
+
 /* hero section */
 
 section.hero {
-    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
     height: 76.8vh;
+    background: url(../img/bowl-and-pet-daities-on-green-background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-section.hero img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-}
-
-.hero .texto {
-    position: absolute;
-    right: 25px;
-    bottom: 160px;
-    text-align: center;
+.hero .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin-bottom: 10%;
 }
 
 .hero .texto h2 {
+    text-align: center;
     letter-spacing: -0.5px;
     background-color: #F3F3F3;
     color: #3C2313;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 400;
     border-radius: 5px;
     padding: 10px 10px;
+    white-space: nowrap;
 }
 
 .hero .texto p {
     color: #3C2313;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 20px 0;
     text-align: center;
 }
 
 .hero .texto span {
-cursor: pointer;
+    text-align: center;
+    cursor: pointer;
     display: inline-block;
     color: #F3F3F3;
     background-color: #F0A83E;
     border-radius: 5px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     width: 190px;
     padding: 20px;
 }
@@ -226,7 +233,7 @@ form .buttons button:last-child {
 /* =======================footer=========================== */
 
 footer .barra-suscripcion {
-    height: 100px;
+    min-height: 100px;
     background-color: #F0A83E;
     margin-top: 120px;
     display: flex;
@@ -301,6 +308,7 @@ footer .contacto .localidad, footer .contacto .telefono, footer .contacto .corre
  .contacto .localidad h4,  .contacto .telefono h4,  .contacto .correo h4 {
     color: white;
     font-size: 2rem;
+    white-space: nowrap;
  }
 
  .contacto .imagen-logo-final {
@@ -318,3 +326,101 @@ footer .contacto .localidad, footer .contacto .telefono, footer .contacto .corre
     color: #FBFAF6;
     height: 30px;
  }
+
+ @media (max-width: 1279px){
+
+
+    .barra-logo-nav .container-logo{
+        width: 220px;
+    }
+    
+    .container-logo img[alt="logo"]{
+        width: 100%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .barra-logo-nav img[ alt="Menú hamburguesa"]{
+        display: block;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    section.hero .texto{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .productos-destacados .productos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer .barra-suscripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 2% 0;
+    }
+ }
+
+ @media  (max-width: 1000px) {
+    .contacto{
+        flex-direction: column;
+    }
+
+    .imagen-logo-final{
+        order: -1;
+        margin-top: 20px;
+    }
+ }
+ @media (max-width: 570px){
+    
+    section.hero .texto{
+        width: 100%;
+    }
+
+    section.hero .texto h2 {
+        font-size: 8vw;
+    }
+
+    section.productos-destacados h2{
+        /* text-align: center; */
+        font-size: 9.8vw;
+        font-weight: 700;
+        line-height: 3.6rem;
+        margin-bottom: 10%;
+    }
+
+    .productos div.tarjeta-producto-1, .productos div.tarjeta-producto-2, .productos div.tarjeta-producto-3{
+        width: 60%;
+        height: 400px;
+    }
+
+    section.contacto form{
+        width: 100%;
+    }
+
+    section.contacto form input{
+        width: 90%;
+    }
+    .barra-suscripcion div img,.barra-suscripcion div p{
+        font-size: 5vw;
+    }
+
+    .barra-suscripcion div input {
+        width: 60vw;
+        margin-bottom: 1%;
+    }
+
+    .barra-suscripcion div button{
+        width: 25vw;
+    }
+ }
+ 
